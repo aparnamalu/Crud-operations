@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donar Details</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:orange;
+      padding: 10px 20px;
+      height: 50px;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+  
+
+    
+      #search {
+        margin-top: 10px;
+        padding-left: 450px;
+       }
+
+       #search input {
+      padding: 10px;
+      border-radius: 20px;
+      width: 250px;
+     font-size: 1rem;
+     border: 2px solid #fff;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   }
+
+     #search input:focus {
+     border-color:black;
+     }
+
+
+     .butn{
+            display: inline;
+            margin-left: 10px;
+        }
+        .content input{
+            height: 25px;
+            width: 200px;
+            margin-right: 15px;
+            border: none;
+            font-size: 16px;
+            padding: 4px;
+            border-radius: 4px;
+            box-shadow: 0px 4px 8px 2px rgba(240, 66, 75, 0.25), 0px 0px 0px 1px rgba(231, 43, 43, 0.08);
+        }
+        .butn button{
+            padding: 8px 14px;
+            border-radius:5px;
+            border: none;
+            font-size: 16px;
+            margin: 0 4px;
+            box-shadow: 1px 4px 8px 2px rgba(9, 30, 66, 0.25), 1px 0px 0px 1px rgba(9, 30, 66, 0.08);
+
+        }
+
+        .edit:hover{
+            background-color: blue;
+            color: white;
+        }
+        .save:hover{
+            background-color: green;
+            color: white;
+        }
+        .delete:hover{
+            background-color: red;
+            color: white;
+        }
+        .button-32 {
+        background-color: #43ee0f93;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-align: center;
+        transition: 200ms;
+        box-sizing: border-box;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        display: block;
+        
+        
+        }
+        .button-32:not(:disabled):hover,
+        .button-32:not(:disabled):focus {
+        outline: 0;
+        background: #f4e603;
+        box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+        }
+
+        .button-32:disabled {
+        filter: saturate(0.2) opacity(0.5);
+        -webkit-filter: saturate(0.2) opacity(0.5);
+        cursor: not-allowed;
+        }
+        input[type="email"]:focus,input[type="text"]:focus{
+            outline: none;
+        }
+        .content{
+            margin-bottom: 15px;
+        }
+      
+    
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Donar Details</a>
+    
+    <div id="search">
+        <input type="text" placeholder="Search here" id="filter">
+    </div>
+  </nav>
+  <div class="btn">
+    <a href="http://localhost:3000/adddonor">
+        <button class="button-32">
+            Add Donors
+        </button>
+    </a>
+</div>
+<h2 align="center"><u>Details of Donors</u></h2>
+<div class="container" id="main">
+    
+</div>
+<script src="../js/index.js"></script>
+ 
+
+</body>
+</html>
